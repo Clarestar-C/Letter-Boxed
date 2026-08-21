@@ -91,6 +91,10 @@ export default function App() {
   const [targetWords, setTargetWords] = useState(5);
   const [errorMessage, setErrorMessage] = useState("");
 
+  useEffect(() => {
+    generateNewBoard();
+  }, []);
+
   const showError = (msg) => {
     setErrorMessage(msg);
     setTimeout(() => {
