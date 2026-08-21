@@ -200,7 +200,7 @@ export default function App() {
       minComputerPath = solveBoard(newBoard);
     }
 
-    const playerTarget = Math.min(minComputerPath + 1, 6);
+    const playerTarget = Math.min(minComputerPath + 2, 6);
 
     setBoardLetters(newBoard);
     setCompletedWords([]);
