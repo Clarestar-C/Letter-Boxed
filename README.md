@@ -1,22 +1,14 @@
-# React + Vite
+**Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A dynamic web implementation of the classic Letter Boxed word puzzle, built with React and Vite. It features interactive SVG vector line drawing between side nodes, mobile touch navigation, and an algorithmic solver for path validation and solution finding.
 
-Currently, two official plugins are available:
+**Key Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Interactive Canvas & Line Engine:** Dynamic SVG pathing that visually connects selected letters across the 4-sided board as you spell out words.
+* **Algorithmic Solver (DFS):** Built-in Depth-First Search solver that analyzes letter combinations, validates solutions, and sets difficulty targets.
+* **Responsive & Mobile-Optimized:** Full touch-event support with interactive node physics, smooth canvas rendering, and custom toast notifications.
+* **Dictionary Integration:** Real-time word validation using an English dictionary dataset.
 
-## React Compiler
+**Current Work in Progress / Roadmap**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-
-## Features
-
-- Play Letter Boxed
-- Find words connecting the letters
-- Track your progress
+* **Board Generation Performance:** Optimizing the board-generation pipeline to significantly reduce algorithm execution time and serve newly generated puzzles faster.
